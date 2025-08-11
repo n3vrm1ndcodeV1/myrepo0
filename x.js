@@ -51,7 +51,7 @@ async function getOrgAdmin() {
 
   const orgIds = [];
   for (const elem of json) {
-    if (elem.role && elem.role.toUpperCase() === "ADMIN" && elem.id) {
+    if (elem.role && elem.role.toUpperCase() === "USER" && elem.id) {
       orgIds.push(elem.id);
       console.log(`Found ADMIN role with ID: ${elem.id}`);
     }
